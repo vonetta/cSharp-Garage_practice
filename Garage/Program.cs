@@ -44,8 +44,8 @@ namespace Garage
 
             carList.Insert(0, c3); //adds c3 as the first car
 
-            Car c4 = new Car();
-            c4.Make = "Honda";
+            Car c4 = new Car("Honda");
+            //c4.Make = "Honda";
             c4.Model = "Sonata";
             c4.Color = "Raindow";
 

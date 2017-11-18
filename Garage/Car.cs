@@ -16,12 +16,13 @@ namespace Garage
 
         //constructor
         public Car() {
-            Price = 100m;
+            Price = 5000m;
             Sold = true;
         }
 
-        public Car(string make)
+        public Car(string make):this()
         {
+          
             Make = make; //Set the 'make' parameter to the property 'Make';
         }
     }
