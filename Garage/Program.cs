@@ -32,7 +32,7 @@ namespace Garage
 
             //2
             carList.Add(new Car { Make = "Audi", Model = "X4", Color = "Green", Price = 1.2m,
-                Sold = true });
+            Sold = true });
 
             //3
             Car c3 = new Car();
@@ -71,6 +71,19 @@ namespace Garage
             foreach (Car item in carList) {
                 Console.WriteLine("{0}, {1} is {2}, listed for {3:c}", item.Make, item.Model, item.Sold ? "sold" : "not sold", item.Price);
             }
+
+
+            //dictionary
+            List<Car> cars = new List<Car>();
+            Dictionary<string, Car> myCars = new Dictionary<string, Car>();
+
+            myCars.Add(c1.Make, c1);
+         
+            myCars.Add(c3.Make, c3);
+            myCars.Add(c4.Make, c4);
+            Car x = myCars["Toyota"]; //Returns cars with "Toyota" and puts it in 'x' variable
+
+            Console.WriteLine(x.Model);
             Console.ReadLine();
         }
     }

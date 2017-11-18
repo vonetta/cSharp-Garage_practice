@@ -14,8 +14,9 @@ namespace Garage
         public decimal Price { get; set; }
         public bool Sold { get; set; }
 
-        //constructor
-        public Car() {
+        constructor
+        public Car()
+        {
             Price = 5000m;
             Sold = true;
         }
