@@ -44,6 +44,13 @@ namespace Garage
 
             carList.Insert(0, c3); //adds c3 as the first car
 
+            Car c4 = new Car();
+            c4.Make = "Honda";
+            c4.Model = "Sonata";
+            c4.Color = "Raindow";
+
+            carList.Add(c4);
+
             //build a for loop
 
             for (int i = 0; i < carList.Count; i++) {
@@ -56,13 +63,13 @@ namespace Garage
                 else {
                     sold = "Not sold";
                 }*/
-              //  Console.WriteLine("{0}, {1} is {2}, listed for {3:c}", carList[i].Make, carList[i].Model, carList[i].Sold ? "sold": "not sold", carList[i].Price);
+                Console.WriteLine("{0}, {1} is {2}, listed for {3:c}", carList[i].Make, carList[i].Model, carList[i].Sold ? "sold": "not sold", carList[i].Price);
 
                // Console.WriteLine("{0}, {1} is {2}, listed for {3:c}", carList[i].Make, carList[i].Model, sold, carList[i].Price);
             }
 
             foreach (Car item in carList) {
-                Console.WriteLine("{0}, {1} is {2}, listed for {3:c}", carList[i].Make, carList[i].Model, carList[i].Sold ? "sold" : "not sold", carList[i].Price);
+                Console.WriteLine("{0}, {1} is {2}, listed for {3:c}", item.Make, item.Model, item.Sold ? "sold" : "not sold", item.Price);
             }
             Console.ReadLine();
         }

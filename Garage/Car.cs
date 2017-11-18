@@ -13,5 +13,18 @@ namespace Garage
         public string Color { get; set; }
         public decimal Price { get; set; }
         public bool Sold { get; set; }
+
+        //constructor
+        public Car() {
+            Price = 100m;
+            Sold = true;
+        }
+
+        public Car(string make)
+        {
+            Make = make; //Set the 'make' parameter to the property 'Make';
+        }
     }
 }
+
+
