@@ -72,7 +72,6 @@ namespace Garage
                 Console.WriteLine("{0}, {1} is {2}, listed for {3:c}", item.Make, item.Model, item.Sold ? "sold" : "not sold", item.Price);
             }
 
-
             //dictionary
             List<Car> cars = new List<Car>();
             Dictionary<string, Car> myCars = new Dictionary<string, Car>();
